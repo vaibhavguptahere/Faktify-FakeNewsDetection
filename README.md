@@ -90,10 +90,10 @@ python app.py
 
 | Name | Role | GitHub | LinkedIn |
 |------|------|--------|----------|
-| **[Vaibhav Gupta]** | Team Lead, Full Stack Developer | [GitHub](https://github.com/vaibhavguptahere) | [LinkedIn](https://www.linkedin.com/in/vaibhavguptahere-/) |
-| **[Nishika Kansal]** | Frontend Developer | [GitHub](https://github.com/Nishikakansal) | [LinkedIn](https://www.linkedin.com/in/nishika-kansal-870b18322/) |
-| **[Giriraj Mantri]** | AI/ML Expert | [GitHub](https://github.com/GirirajMantri) | [LinkedIn](https://www.linkedin.com/in/giriraj-mantri-25a57b217/) |
-| **[Isha Katiyar]** | Backend Developer | [GitHub](https://github.com/isha-1686) | [LinkedIn](https://www.linkedin.com/in/isha-katiyar-432156326/) |
+| **Vaibhav Gupta** | Team Lead, Full Stack Developer | [GitHub](https://github.com/vaibhavguptahere) | [LinkedIn](https://www.linkedin.com/in/vaibhavguptahere-/) |
+| **Nishika Kansal** | Frontend Developer | [GitHub](https://github.com/Nishikakansal) | [LinkedIn](https://www.linkedin.com/in/nishika-kansal-870b18322/) |
+| **Giriraj Mantri** | AI/ML Expert | [GitHub](https://github.com/GirirajMantri) | [LinkedIn](https://www.linkedin.com/in/giriraj-mantri-25a57b217/) |
+| **Isha Katiyar** | Backend Developer | [GitHub](https://github.com/isha-1686) | [LinkedIn](https://www.linkedin.com/in/isha-katiyar-432156326/) |
 ---
 
 ## 📬 Contributing
