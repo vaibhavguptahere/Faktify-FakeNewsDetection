@@ -8,9 +8,9 @@ function Home() {
   return (
     <div>
       <Hero/>
-      <FeaturesSection/>
+      {/* <FeaturesSection/>
       <Pricing />
-      <SubscriptionSection/>
+      <SubscriptionSection/> */}
       <Footer/>
     </div>
   );
