@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Search, X } from "lucide-react";
 
-const NEWS_API_KEY = "bd2807686c2f489596d0eff9f7286f65"; // Replace with your API key
+const NEWS_API_KEY = "9a7d6b2eadc841a4aaa0629ae6a9c00e"; // Replace with your API key
 
 const News = () => {
   const [news, setNews] = useState([]);
