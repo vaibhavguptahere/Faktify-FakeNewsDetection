@@ -100,7 +100,7 @@ const Navbar = () => {
             to="/services"
             className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors"
           >
-            Services
+            Community
           </Link>
         </>
       ) : (
@@ -119,7 +119,7 @@ const Navbar = () => {
 
           <SignInButton mode="redirect" afterSignInUrl="/services">
             <button className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors">
-              Services
+              Community
             </button>
           </SignInButton>
         </>
@@ -205,7 +205,7 @@ const Navbar = () => {
             to="/services"
             className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors"
           >
-            Services
+            Community
           </Link>
         </>
       ) : (

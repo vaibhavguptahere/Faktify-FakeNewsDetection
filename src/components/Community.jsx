@@ -3,7 +3,7 @@ import { Search, X } from "lucide-react";
 
 const Services_API_KEY = "9a7d6b2eadc841a4aaa0629ae6a9c00e"; // Replace with your API key
 
-const Services = () => {
+const Community = () => {
     useEffect(() => {
       document.title = "Services | Faktify";
     }, []);
@@ -218,4 +218,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Community;

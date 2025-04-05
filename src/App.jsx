@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import { Routes, Route } from "react-router-dom";
 import Verify from "./components/Verify";
 import News from "./components/News";
-import Services from "./components/Services";
+import Community from "./components/Community";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/hero" element={<Hero />} />
         <Route path="/verify" element={<Verify />} />
         <Route path="/news" element={<News />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Community />} />
       </Routes>
       <Footer/>
     </div>
