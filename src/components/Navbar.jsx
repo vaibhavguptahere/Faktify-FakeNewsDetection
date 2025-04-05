@@ -85,10 +85,10 @@ const Navbar = () => {
           {isSignedIn ? (
         <>
           <Link
-            to="/about"
+            to="/verify"
             className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors"
           >
-            About
+            Verify
           </Link>
           <Link
             to="/news"
