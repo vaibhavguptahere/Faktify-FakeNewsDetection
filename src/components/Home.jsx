@@ -11,7 +11,6 @@ function Home() {
       {/* <FeaturesSection/>
       <Pricing />
       <SubscriptionSection/> */}
-      <Footer/>
     </div>
   );
 }
