@@ -7,6 +7,7 @@ import About from "./components/About";
 import News from "./components/News";
 import Services from "./components/Services";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/news" element={<News />} />
         <Route path="/services" element={<Services />} />
       </Routes>
+      <Footer/>
     </div>
   );
 };
