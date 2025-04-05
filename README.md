@@ -106,7 +106,7 @@ Contributions are welcome! Please follow these steps:
 ---
 
 ## 📂 MVP & Project Snapshots
-📸 Check out our **MVP and snapshots** of the project: [MVP Link]()
+📸 Check out our **MVP and snapshots** of the project: [MVP Link](https://faktify-fakenews.vercel.app/)
 
 ---
 
