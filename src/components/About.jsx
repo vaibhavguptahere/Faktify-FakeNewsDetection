@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom';
 
 const AboutSection = () => {
+  useEffect(() => {
+    document.title = "About | Faktify";
+  }, []);
+  
   const navigate = useNavigate();
 
   const Section = ({ icon: Icon, title, children, variant = "default" }) => {

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import axios from "axios";
+import L from "leaflet";
+import { useEffect } from "react";
 
 const LocationMarker = ({ onLocationSelect }) => {
   useMapEvents({
@@ -22,6 +24,10 @@ const LocationMarker = ({ onLocationSelect }) => {
 };
 
 const Services = () => {
+  useEffect(() => {
+    document.title = "Services | Faktify";
+  }, []);
+
   const [location, setLocation] = useState("");
   const [news, setNews] = useState([]);
   const [mapCenter, setMapCenter] = useState([20.5937, 78.9629]); // Default: India

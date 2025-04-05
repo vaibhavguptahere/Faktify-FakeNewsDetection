@@ -40,7 +40,7 @@ const TradingDisclaimer = ({ onAccept }) => {
   };
 
   return (
-<div className="fixed inset-0 flex items-center justify-center bg-black/80 backdrop-blur-md p-3 z-50">
+<div className="fixed inset-0 flex items-center justify-center bg-black/80 backdrop-blur-md p-3 z-50 mb-0 pb-0">
   <motion.div
     initial={{ opacity: 0, scale: 0.9 }}
     animate={{ opacity: 1, scale: 1 }}
@@ -111,86 +111,6 @@ const TradingDisclaimer = ({ onAccept }) => {
   );
 };
 
-
-const BitcoinTradingGraph = () => {
-  const [candles, setCandles] = useState([]);
-
-  useEffect(() => {
-    const generateCandles = () => {
-      let lastPrice = 50000;
-      const newCandles = Array.from({ length: 25 }, (_, index) => {
-        const open = lastPrice;
-        const volatility = Math.random() * 2000;
-        const close = open + (Math.random() > 0.5 ? volatility : -volatility);
-        const high = Math.max(open, close) + Math.random() * 1000;
-        const low = Math.min(open, close) - Math.random() * 1000;
-        const color = close > open ? "green" : "red";
-        lastPrice = close;
-
-        return { open, close, high, low, color };
-      });
-      setCandles(newCandles);
-    };
-
-    generateCandles();
-    const interval = setInterval(generateCandles, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const maxPrice = Math.max(...candles.map((c) => c.high));
-  const minPrice = Math.min(...candles.map((c) => c.low));
-
-  return (
-    <div className="w-full h-[300px] relative overflow-hidden">
-      <svg viewBox="0 0 2000 300" className="w-full h-full">
-        <defs>
-          <linearGradient>
-            <stop offset="0%" stopColor="rgba(30,40,60,0.3)" />
-            <stop offset="100%" stopColor="rgba(30,40,60,0.6)" />
-          </linearGradient>
-        </defs>
-        <rect
-          x="0"
-          y="0"
-          width="2000"
-          height="300"
-          fill="url(#graphGradient)"
-        />
-        {candles.map((candle, index) => {
-          const x = index * 80 + 40;
-          const width = 30;
-          const scaleY = 250 / (maxPrice - minPrice);
-          const bodyHeight = Math.abs(candle.close - candle.open) * scaleY;
-          const bodyY = 300 - (candle.close - minPrice) * scaleY;
-          const wickHeight = (candle.high - candle.low) * scaleY;
-          const wickY = 300 - (candle.high - minPrice) * scaleY;
-
-          return (
-            <g key={index} className="transition-all duration-500 ease-in-out">
-              <line
-                x1={x}
-                y1={wickY}
-                x2={x}
-                y2={wickY + wickHeight}
-                stroke={candle.color === "green" ? "#10B981" : "#EF4444"}
-                strokeWidth="3"
-              />
-              <rect
-                x={x - width / 2}
-                y={bodyY}
-                width={width}
-                height={bodyHeight}
-                fill={candle.color === "green" ? "#10B981" : "#EF4444"}
-                className="transition-all duration-500 ease-in-out"
-              />
-            </g>
-          );
-        })}
-      </svg>
-    </div>
-  );
-};
-
 const Hero = () => {
   const [showDisclaimer, setShowDisclaimer] = useState(true);
   const nav = useNavigate();
@@ -200,7 +120,7 @@ const Hero = () => {
       {showDisclaimer && (
         <TradingDisclaimer onAccept={() => setShowDisclaimer(false)} />
       )}
-      <div className="relative min-h-screen w-full bg-black overflow-hidden flex flex-col items-center justify-center py-40 px-6">
+      <div className="relative min-h-screen w-full bg-black overflow-hidden flex flex-col items-center justify-center py-40 px-6 pb-0 mb-0 pt-16">
         <Particles
           className="absolute inset-0"
           quantity={50}
@@ -250,7 +170,7 @@ const Hero = () => {
           <div className="absolute -inset-3 bg-white/5 rounded-3xl blur-3xl" />
 
         </div>
-      </div>
+      </div> 
     </>
   );
 };

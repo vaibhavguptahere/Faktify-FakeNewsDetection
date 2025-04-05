@@ -4,6 +4,9 @@ import { Search, X } from "lucide-react";
 const NEWS_API_KEY = "9a7d6b2eadc841a4aaa0629ae6a9c00e"; // Replace with your API key
 
 const News = () => {
+    useEffect(() => {
+      document.title = "News | Faktify";
+    }, []);
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
