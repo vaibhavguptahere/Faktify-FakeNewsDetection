@@ -105,9 +105,9 @@ const Navbar = () => {
         </>
       ) : (
         <>
-          <SignInButton mode="redirect" afterSignInUrl="/about">
+          <SignInButton mode="redirect" afterSignInUrl="/verify">
             <button className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors">
-              About
+              Verify
             </button>
           </SignInButton>
 
@@ -190,10 +190,10 @@ const Navbar = () => {
         {isSignedIn ? (
         <>
           <Link
-            to="/about"
+            to="/verify"
             className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors"
           >
-            About
+            Verify
           </Link>
           <Link
             to="/news"

@@ -75,7 +75,7 @@ const News = () => {
   };
 
   return (
-    <div className="p-8 bg-black text-white min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
+    <div className="p-8 text-white min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
       <h2 className="mt-28 text-4xl font-bold mb-8 text-center">🗺 Localized News</h2>
 
       {/* Location Search Bar */}

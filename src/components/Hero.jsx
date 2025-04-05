@@ -177,10 +177,10 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <SignInButton afterSignInUrl="/about">
+            <SignInButton afterSignInUrl="/home">
               <button
                 className="flex items-center space-x-3 px-8 py-4 text-lg rounded-xl font-bold bg-white text-black hover:bg-gray-200 transition-all"
-                onClick={() => nav("/about")}
+                onClick={() => nav("/home")}
               >
                 Start Now <ChevronRight className="ml-2 w-6 h-6" />
               </button>
