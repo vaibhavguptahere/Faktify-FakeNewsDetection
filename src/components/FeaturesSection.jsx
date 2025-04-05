@@ -7,6 +7,9 @@ import {
   Rocket,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { useRef } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Particles from "../components/ui/particles";
 

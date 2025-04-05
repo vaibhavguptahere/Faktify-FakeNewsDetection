@@ -21,6 +21,7 @@ import {
 import Particles from "../components/ui/particles";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const TradingDisclaimer = ({ onAccept }) => {
   const [isRead, setIsRead] = useState(false);
@@ -142,6 +143,10 @@ const TradingDisclaimer = ({ onAccept }) => {
 };
 
 const Hero = () => {
+  const featuresRef = useRef(null);
+  const handleScrollToFeatures = () => {
+    featuresRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   const [showDisclaimer, setShowDisclaimer] = useState(true);
   const nav = useNavigate();
 
@@ -177,23 +182,19 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <SignInButton afterSignInUrl="/home">
               <button
-                className="flex items-center space-x-3 px-8 py-4 text-lg rounded-xl font-bold bg-white text-black hover:bg-gray-200 transition-all"
-                onClick={() => nav("/home")}
+                className="flex items-center space-x-3 px-8 py-4 text-lg rounded-xl font-bold bg-white text-black hover:bg-gray-200 transition-all" onClick={handleScrollToFeatures}
               >
                 Start Now <ChevronRight className="ml-2 w-6 h-6" />
               </button>
-            </SignInButton>
 
-            <SignInButton afterSignInUrl="/services">
+
               <button
                 className="flex items-center space-x-3 px-8 py-4 text-lg rounded-xl font-bold border-2 border-white text-white hover:bg-white/10 transition-all duration-300"
                 onClick={() => nav("/services")}
               >
                 <TrendingUp className="mr-2 w-6 h-6" /> Other Services
               </button>
-            </SignInButton>
           </div>
         </div>
 
