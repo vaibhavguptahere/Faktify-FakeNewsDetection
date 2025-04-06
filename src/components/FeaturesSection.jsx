@@ -50,7 +50,7 @@ function Feature() {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     <div className="flex justify-center">
       <img
-        src="../assets/flow.png"
+        src="/src/assets/flow.png"
         alt="Faktify Flow"
         className="w-full max-w-md rounded-2xl border border-white/10 shadow-2xl"
       />
