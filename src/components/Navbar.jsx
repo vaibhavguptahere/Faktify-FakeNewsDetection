@@ -97,7 +97,7 @@ const Navbar = () => {
             News
           </Link>
           <Link
-            to="/services"
+            to="/community"
             className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors"
           >
             Community
