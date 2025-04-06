@@ -36,36 +36,39 @@ function Feature() {
 
   return (
     <div className="bg-gradient-to-b from-black via-gray-900 to-black px-4 sm:px-6 lg:px-12 py-20 text-white mt-0 pt-0">
-
       {/* How It Works Section */}
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-10 backdrop-blur-xl shadow-xl"
-      >
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-white tracking-tight text-center pb-5">
-          How Faktify Works
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
-          <img
-            src="/assets/ai-flow-diagram.png"
-            alt="AI Verification Flow"
-            className="w-full rounded-xl border border-white/10 shadow-2xl"
-          />
-          <div className="space-y-4 sm:space-y-5 text-left text-base sm:text-lg text-gray-300">
-            <p>
-              Faktify uses powerful machine learning models like BERT, SVM, and
-              Random Forest to break down each article and find the truth.
-            </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li>Spots dramatic, clickbait, or misleading phrases</li>
-              <li>Cross-checks information with verified sources</li>
-              <li>Assigns a credibility score based on accuracy and tone</li>
-            </ul>
-          </div>
-        </div>
-      </motion.div>
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7 }}
+  className="bg-white/5 border border-white/10 rounded-3xl px-6 py-10 sm:px-10 sm:py-14 backdrop-blur-xl shadow-xl"
+>
+  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight text-center mb-10">
+    How Faktify Works
+  </h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div className="flex justify-center">
+      <img
+        src="src/assets/flow.png"
+        alt="Faktify Flow"
+        className="w-full max-w-md rounded-2xl border border-white/10 shadow-2xl"
+      />
+    </div>
+
+    <div className="space-y-5 text-left text-base sm:text-lg text-gray-300">
+      <p>
+        Faktify uses the powerful Gemini API to analyze and compare news content with verified articles. It doesn’t just check if a piece is fake — it explains <span className="text-white font-semibold">why</span> it appears suspicious.
+      </p>
+      <ul className="list-disc list-inside space-y-2">
+        <li>Compares your submitted news with trusted, factual sources</li>
+        <li>Highlights differences in tone, structure, and factual claims</li>
+        <li>Provides a clear explanation of why the news may be false or misleading</li>
+      </ul>
+    </div>
+  </div>
+</motion.div>
+
 
       {/* Steps Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
