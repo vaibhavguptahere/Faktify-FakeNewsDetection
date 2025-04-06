@@ -15,6 +15,7 @@ import {
   Shield,
   Info,
   Wifi,
+  Users,
   Award,
   CheckCircle,
 } from "lucide-react";
@@ -191,9 +192,10 @@ const Hero = () => {
 
               <button
                 className="flex items-center space-x-3 px-8 py-4 text-lg rounded-xl font-bold border-2 border-white text-white hover:bg-white/10 transition-all duration-300"
-                onClick={() => nav("/services")}
+                onClick={() => nav("/community")}
               >
-                <TrendingUp className="mr-2 w-6 h-6" /> Other Services
+               <Users className="w-4 h-4 text-blue-400 mr-1.5" />  
+               Community
               </button>
           </div>
         </div>
