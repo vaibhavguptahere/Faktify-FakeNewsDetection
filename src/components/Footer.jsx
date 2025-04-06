@@ -28,25 +28,25 @@ const Footer = () => {
                 </h3>
                 <div className="grid grid-cols-1 gap-3">
                   <a
-                    href="#"
+                    href="/verify"
                     className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400"
                   >
                     <TrendingUp className="w-4 h-4 text-blue-400" />
-                    <span>Other Services</span>
+                    <span>Verify</span>
                   </a>
                   <a
-                    href="#"
+                    href="/news"
                     className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400"
                   >
                     <Code className="w-4 h-4 text-blue-400" />
-                    <span>About</span>
+                    <span>News</span>
                   </a>
                   <a
-                    href="#"
+                    href="/community"
                     className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400"
                   >
                     <Users className="w-4 h-4 text-blue-400" />
-                    <span>News</span>
+                    <span>Community</span>
                   </a>
                 </div>
               </div>
