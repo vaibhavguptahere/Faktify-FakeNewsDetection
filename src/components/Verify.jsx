@@ -107,16 +107,18 @@ const LinkVerifier = () => {
       </p>
     </div>
 
-    {/* Simulated Reputation Score */}
+    {/* Reputation or Safety Status */}
     <div>
-      <h3 className="text-blue-400 font-medium mb-1">📊 Reputation Score:</h3>
-      <p className="text-green-400 font-bold">85/100 — Trusted Domain</p>
+      <h3 className="text-blue-400 font-medium mb-1">📊 Domain Status:</h3>
+      {details.isSafe ? (
+        <p className="text-green-400 font-bold">✅ Trusted Domain</p>
+      ) : (
+        <p className="text-red-500 font-bold">❌ Not a Trusted Domain</p>
+      )}
       <p className="text-gray-400 text-xs">
-        Score is simulated based on domain popularity and frequency in safe lists.
+        Status is determined based on the domain's presence in the safe list.
       </p>
     </div>
-
-    {/* Shortened URL Detector */}
     {details.fullURL.length < 30 && (
       <div>
         <h3 className="text-blue-400 font-medium mb-1">⚠️ Shortened Link Alert:</h3>
