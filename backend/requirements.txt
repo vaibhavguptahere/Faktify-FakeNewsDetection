@@ -1,2 +1,3 @@
 google-genai
 flask
+flask_cors
