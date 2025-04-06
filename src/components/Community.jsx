@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import axios from "axios";
 import { SendHorizonal } from "lucide-react";
 
 function PostForm({ userId, onPostCreated }) {
+  useEffect(() => {
+    document.title = "Community | Faktify";
+  }, []);
   const [title, setTitle] = useState("");
   const [link, setLink] = useState("");
   const [description, setDescription] = useState("");

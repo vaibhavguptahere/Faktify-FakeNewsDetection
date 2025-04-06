@@ -117,7 +117,7 @@ const Navbar = () => {
             </button>
           </SignInButton>
 
-          <SignInButton mode="redirect" afterSignInUrl="/services">
+          <SignInButton mode="redirect" afterSignInUrl="/community">
             <button className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors">
               Community
             </button>
@@ -202,7 +202,7 @@ const Navbar = () => {
             News
           </Link>
           <Link
-            to="/services"
+            to="/community"
             className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors"
           >
             Community
@@ -222,9 +222,9 @@ const Navbar = () => {
             </button>
           </SignInButton>
 
-          <SignInButton mode="redirect" afterSignInUrl="/services">
+          <SignInButton mode="redirect" afterSignInUrl="/community">
             <button className="text-xl font-normal tracking-wide hover:text-gray-300 transition-colors">
-              Services
+              Community
             </button>
           </SignInButton>
         </>

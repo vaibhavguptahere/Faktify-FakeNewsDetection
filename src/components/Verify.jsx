@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Info, ShieldCheck, AlertTriangle } from "lucide-react"; // Optional: Icon pack like lucide-react
 
 const safeDomains = [
@@ -19,6 +19,10 @@ const safeDomains = [
 ];
 
 const LinkVerifier = () => {
+  useEffect(() => {
+    document.title = "Verify | Faktify";
+  }, []);
+
   const [url, setUrl] = useState("");
   const [details, setDetails] = useState(null);
   const [error, setError] = useState("");
